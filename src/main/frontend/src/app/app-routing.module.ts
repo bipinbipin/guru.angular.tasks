@@ -8,6 +8,7 @@ import {StepperComponent} from "./stepper/stepper.component";
 @NgModule({
     imports: [
         RouterModule.forRoot([
+            {  path: '', redirectTo: 'tasks', pathMatch: 'full' },
             { path: 'tasks', component: TasksComponent },
             { path: 'stepper', component: StepperComponent },
             // { path: '**', component: PageNotFoundComponent }  // catch-all for pages not found
